@@ -1,0 +1,14 @@
+{
+  "properties" : { },
+  "id" : "92d99420da92429f8ecde3b36b49dbbf",
+  "name" : "sysNotice 公告管理",
+  "type" : "api",
+  "parentId" : "0",
+  "path" : "/api",
+  "createTime" : null,
+  "updateTime" : 1782007248084,
+  "createBy" : null,
+  "updateBy" : null,
+  "paths" : [ ],
+  "options" : [ ]
+}
