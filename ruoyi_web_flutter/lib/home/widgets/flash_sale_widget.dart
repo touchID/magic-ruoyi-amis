@@ -73,11 +73,9 @@ class FlashSaleWidget extends StatelessWidget {
                                     style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.red),
                                   ),
                                   const SizedBox(width: 10),
-                                  Expanded(
-                                    child: Text(
-                                      '¥${product.originalPrice}',
-                                      style: const TextStyle(fontSize: 14, color: Colors.grey, decoration: TextDecoration.lineThrough),
-                                    ),
+                                  Text(
+                                    '¥${product.originalPrice}',
+                                    style: const TextStyle(fontSize: 14, color: Colors.grey, decoration: TextDecoration.lineThrough),
                                   ),
                                 ],
                               ),
