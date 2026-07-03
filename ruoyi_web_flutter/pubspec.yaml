@@ -36,7 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.9
   # getx 状态管理
   get: ^4.7.3
-
+  go_router: ^17.3.0
 
 dev_dependencies:
   flutter_test:

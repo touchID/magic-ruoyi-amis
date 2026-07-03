@@ -1,13 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:get/get_navigation/src/root/get_material_app.dart';
 
-import 'home/home_binding.dart';
-import 'home/home_view.dart';
+import 'router/app_router.dart';
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  // 等待字体全部加载完成再启动界面
+void main() {
   runApp(const MyApp());
 }
 
@@ -16,14 +11,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
+    return MaterialApp.router(
       title: '商城首页',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.red),
         primaryColor: Colors.red,
       ),
-      initialBinding: HomeBinding(),
-      home: const HomePage(),
+      routerConfig: appRouter,
     );
   }
 }
