@@ -1,3 +1,10 @@
+ruoyi_app_flutter 聊天
+<img width="1242" height="2688" alt="image" src="https://github.com/user-attachments/assets/7194ec88-e69d-4fed-aa44-f877fbd7ead0" />
+<img width="1242" height="2688" alt="image" src="https://github.com/user-attachments/assets/79cd5354-38e5-40e9-99d9-4ada0074534f" />
+<img width="1242" height="2688" alt="image" src="https://github.com/user-attachments/assets/05dd89ba-d909-4f9c-839a-d314b602e127" />
+<img width="1242" height="2688" alt="image" src="https://github.com/user-attachments/assets/b5e7524f-b71f-4098-b28e-555a5738775f" />
+
+
 ## 平台简介
 
 项目链接：https://gitee.com/whiteshader/ruoyi-react
