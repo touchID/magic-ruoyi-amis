@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_state_manager/src/simple/get_view.dart';
 
+import 'home_logic.dart';
 import 'home_state.dart';
 import 'widgets/banner_widget.dart';
 import 'widgets/category_widget.dart';
@@ -9,7 +11,7 @@ import 'widgets/header_widget.dart';
 import 'widgets/product_grid_widget.dart';
 import 'widgets/top_nav_widget.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends GetView<HomeLogic> {
   const HomePage({Key? key}) : super(key: key);
 
   @override
