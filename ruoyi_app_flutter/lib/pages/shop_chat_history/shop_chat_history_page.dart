@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:go_router/go_router.dart';
 
 class ShopChatHistoryPage extends StatelessWidget {
   const ShopChatHistoryPage({super.key});
@@ -16,9 +16,9 @@ class ShopChatHistoryPage extends StatelessWidget {
         children: [
           _buildSearchBar(),
           const SizedBox(height: 16),
-          _buildHistoryItem('2024-01-15', '客服', '您好，有什么可以帮助您的？'),
-          _buildHistoryItem('2024-01-14', '客服', '感谢您的咨询'),
-          _buildHistoryItem('2024-01-13', '客服', '请问需要什么帮助？'),
+          _buildHistoryItem(context, '2024-01-15', '客服', '您好，有什么可以帮助您的？'),
+          _buildHistoryItem(context, '2024-01-14', '客服', '感谢您的咨询'),
+          _buildHistoryItem(context, '2024-01-13', '客服', '请问需要什么帮助？'),
         ],
       ),
     );
@@ -39,10 +39,10 @@ class ShopChatHistoryPage extends StatelessWidget {
     );
   }
 
-  Widget _buildHistoryItem(String date, String name, String message) {
+  Widget _buildHistoryItem(BuildContext context, String date, String name, String message) {
     return GestureDetector(
       onTap: () {
-        Get.toNamed('/shop_chat_history_details');
+        context.push('/shop_chat_history_details');
       },
       child: Container(
         padding: const EdgeInsets.all(16),

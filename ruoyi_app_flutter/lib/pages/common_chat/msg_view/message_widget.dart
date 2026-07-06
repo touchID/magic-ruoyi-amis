@@ -262,10 +262,10 @@ class DefaultMessageWidget extends StatelessWidget with ChatCommonWidget {
                 buttonMainStyleList: [true, false],
                 onPressedList: [
                       () {
-                    Get.back();
+                    Navigator.of(context).pop();
                   },
                       () {
-                    Get.back();
+                    Navigator.of(context).pop();
                   }
                 ],
                 isVerticalButton: true,

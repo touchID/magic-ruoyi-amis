@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:go_router/go_router.dart';
 import '../../controllers/user_controller.dart';
 import '../../routes/app_routes.dart';
 
@@ -192,7 +193,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       height: 48.h,
                       child: OutlinedButton(
                         onPressed: () {
-                          Get.back();
+                          context.pop();
                         },
                         child: const Text('取消'),
                       ),
@@ -216,7 +217,7 @@ class _ProfilePageState extends State<ProfilePage> {
                           try {
                             await _userController.changePassword(oldPassword, newPassword);
                             Get.snackbar('成功', '密码修改成功');
-                            Get.back();
+                            context.pop();
                           } catch (e) {
                             Get.snackbar('错误', e.toString());
                           }

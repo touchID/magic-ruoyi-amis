@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:go_router/go_router.dart';
 
 class ShopChatHistoryListPage extends StatelessWidget {
   const ShopChatHistoryListPage({super.key});
@@ -15,16 +15,16 @@ class ShopChatHistoryListPage extends StatelessWidget {
         padding: const EdgeInsets.all(16),
         itemCount: 10,
         itemBuilder: (context, index) {
-          return _buildListItem(index);
+          return _buildListItem(context, index);
         },
       ),
     );
   }
 
-  Widget _buildListItem(int index) {
+  Widget _buildListItem(BuildContext context, int index) {
     return GestureDetector(
       onTap: () {
-        Get.toNamed('/shop_chat_history_details');
+        context.push('/shop_chat_history_details');
       },
       child: Container(
         padding: const EdgeInsets.all(16),

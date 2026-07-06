@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 import '../../model/chat_message.dart';
 
 class ShopChatPage extends StatefulWidget {
@@ -67,7 +68,7 @@ class _ShopChatPageState extends State<ShopChatPage> {
     return IconButton(
       icon: Icon(Icons.search, size: 24),
       onPressed: () {
-        Get.toNamed('/shop_chat_history');
+        context.push('/shop_chat_history');
       },
     );
   }
